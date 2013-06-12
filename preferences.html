@@ -1,0 +1,131 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+	<!-- BEGIN .header -->
+	<div class="header">
+		<div class="header__holder">
+			<h1 class="header__logo" title="Mapidy"><a href="#">Mapidy</a></h1>
+			<div class="header__profile">
+				<div class="header__user">Welcome, John Doe!</div>
+				<div class="header__preferences"><a href="#">Preferences</a></div>
+				<div class="header__quit"><a href="#">Quit</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- /.header -->
+	<!-- BEGIN .panel -->
+	<div class="panel">
+		<div class="panel__holder">
+			<div class="panel__nav">
+				<ul>
+					<li><a href="#"><i class="icon icon_tasks"></i>Tasks</a></li>
+					<li><a href="#"><i class="icon icon_profile"></i>Profile</a></li>
+					<li><a href="#"><i class="icon icon_people"></i>People</a></li>
+					<li><a href="#"><i class="icon icon_notifications"></i>Notifications</a></li>
+				</ul>
+			</div>
+			<div class="panel__tools">
+				<div class="panel__button js-drop">
+					<button class="btn btn_red"><i class="icon icon_create"></i>Create</button>
+					<div class="panel__button-dropdown js-dropdown">
+						<ul>
+							<li><a href="#">New task</a></li>
+							<li><a href="#">New canban board</a></li>
+							<li><a href="#">New people group</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="panel__search">
+					<i class="icon icon_search"></i><input type="text" placeholder="Search" class="panel__input">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.panel -->
+	<!-- BEGIN .page -->
+	<div class="page">
+			<div class="l l-main">
+				<div class="l-main__holder">
+					<div class="preferences">
+						<div class="preferences__content">
+							<h1 class="title">Preferences</h1>
+							<div class="preferences__col preferences__left">
+								<h2 class="title2">Username and e-mail settings</h2>
+								<label class="label">
+									<div class="label__title">Username</div>
+									<div class="label__field">
+										<input type="text" class="input_text" placeholder="" value="Ivan Ardintsev">
+									</div>
+								</label>
+								<label class="label">
+									<div class="label__title">E-mail</div>
+									<div class="label__field">
+										<input type="email" class="input_text" placeholder="" value="ardintsev@gmail.com">
+									</div>
+								</label>
+							</div>
+							<div class="preferences__col preferences__right">
+								<h2 class="title2">Password settings</h2>
+								<label class="label">
+									<div class="label__title">New Password</div>
+									<div class="label__field">
+										<input type="password" class="input_text" placeholder="" value="">
+									</div>
+								</label>
+								<label class="label">
+									<div class="label__title">Confirm Password</div>
+									<div class="label__field">
+										<input type="password" class="input_text" placeholder="" value="">
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="preferences__content">
+							<div class="title2">Notification settings</div>
+							<label class="label">
+								<div class="label__title">Notify me about</div>
+								<div class="label__field">
+									<label class="label_checkbox">
+										<input class="input" type="checkbox"><i></i>New tasks
+									</label>
+									<label class="label_checkbox">
+										<input class="input" type="checkbox"><i></i>New comments in tasks
+									</label>
+									<label class="label_checkbox">
+										<input class="input" type="checkbox"><i></i>New files in tasks
+									</label>
+								</div>
+							</label>
+							<label class="label">
+								<div class="label__title">How often to notify</div>
+								<div class="label__field">
+									<input type="password" class="input_text" placeholder="" value="">
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<!-- /.page -->
+	<!-- BEGIN .footer -->
+	<div class="footer">
+		<div class="footer__holder">
+			<p>
+				<span class="footer__copyright">© 2012 MAPIDY LTD.</span>
+				<a href="mailto:info@mapidy.com">info@mapidy.com</a>
+			</p>
+		</div>
+	</div>
+	<!-- /.footer -->
+</body>
+</html>
