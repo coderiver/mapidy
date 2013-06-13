@@ -1,0 +1,244 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="chosen/chosen.jquery.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+	<!-- BEGIN .header -->
+	<div class="header">
+		<div class="header__holder">
+			<h1 class="header__logo" title="Mapidy"><a href="#">Mapidy</a></h1>
+			<div class="header__profile">
+				<div class="header__user">Welcome, John Doe!</div>
+				<div class="header__preferences"><a href="#">Preferences</a></div>
+				<div class="header__quit"><a href="#">Quit</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- /.header -->
+	<!-- BEGIN .panel -->
+	<div class="panel">
+		<div class="panel__holder">
+			<div class="panel__nav">
+				<ul>
+					<li><a href="#"><i class="icon icon_tasks"></i>Tasks</a></li>
+					<li><a href="#"><i class="icon icon_profile"></i>Profile</a></li>
+					<li class="is-active"><a href="#"><i class="icon icon_people"></i>People</a></li>
+					<li><a href="#"><i class="icon icon_notifications"></i>Notifications</a></li>
+				</ul>
+			</div>
+			<div class="panel__tools">
+				<div class="panel__button js-drop">
+					<button class="btn btn_red"><i class="icon icon_create"></i>Create</button>
+					<div class="panel__button-dropdown js-dropdown">
+						<ul>
+							<li><a href="#">New task</a></li>
+							<li><a href="#">New canban board</a></li>
+							<li><a href="#">New people group</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="panel__search">
+					<i class="icon icon_search"></i><input type="text" placeholder="Search" class="panel__input">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.panel -->
+	<!-- BEGIN .page -->
+	<div class="page">
+			<div class="l l-main">
+				<div class="l-main__holder">
+					<div class="people">
+						<div class="people__row">
+							<div class="people__col people__left">
+								<h3 class="people__title">Coworkers</h3>
+								<div class="people__number">6 people</div>
+								<div class="people__button">
+									<a href="#" class="btn btn_grey js-invite">Invite more</a>
+									<div class="people__invite js-invite-drop">
+										<div class="people__invite-holder">
+											<input type="email" class="input_text" placeholder="E-mail adresses, separated by commas" value="">
+											<a href="#" class="btn btn_grey js-invitations">Send invitations</a>
+											<a href="#" class="btn btn_clear">Cancel</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="people__col">
+								<ul class="people__list">
+									<li class="people__item">
+										<div class="people__userpic"><a href="#"><img src="img/userpic1.png"></a></div>
+										<div class="people__userinfo">
+											<p class="people__name"><a href="#">George Robinson</a></p>
+											<p><a href="#">george@mapidy.com</a></p>
+											<p>+7 (926) 417-17-76</p>
+										</div>
+									</li>
+									<li class="people__item">
+										<div class="people__userpic"><a href="#"><img src="img/userpic2.png"></a></div>
+										<div class="people__userinfo">
+											<p class="people__name"><a href="#">George Robinson</a></p>
+											<p><a href="#">george@mapidy.com</a></p>
+											<p>+7 (926) 417-17-76</p>
+										</div>
+									</li>
+									<li class="people__item">
+										<div class="people__userpic"><a href="#"><img src="img/userpic3.png"></a></div>
+										<div class="people__userinfo">
+											<p class="people__name"><a href="#">George Robinson</a></p>
+											<p><a href="#">george@mapidy.com</a></p>
+											<p>+7 (926) 417-17-76</p>
+										</div>
+									</li>
+									<li class="people__item">
+										<div class="people__userpic"><a href="#"><img src="img/userpic1.png"></a></div>
+										<div class="people__userinfo">
+											<p class="people__name"><a href="#">George Robinson</a></p>
+											<p><a href="#">george@mapidy.com</a></p>
+											<p>+7 (926) 417-17-76</p>
+										</div>
+									</li>
+									<li class="people__item">
+										<div class="people__userpic"><a href="#"><img src="img/userpic2.png"></a></div>
+										<div class="people__userinfo">
+											<p class="people__name"><a href="#">George Robinson</a></p>
+											<p><a href="#">george@mapidy.com</a></p>
+											<p>+7 (926) 417-17-76</p>
+										</div>
+									</li>
+									<li class="people__item">
+										<div class="people__userpic"><a href="#"><img src="img/userpic3.png"></a></div>
+										<div class="people__userinfo">
+											<p class="people__name"><a href="#">George Robinson</a></p>
+											<p><a href="#">george@mapidy.com</a></p>
+											<p>+7 (926) 417-17-76</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="people__row">
+							<div class="people__col people__left">
+								<h3 class="people__title">Coworkers</h3>
+								<div class="people__number">2 people</div>
+								<div class="people__button">
+									<a href="#" class="btn btn_grey js-invite">Invite more</a>
+									<div class="people__invite js-invite-drop">
+										<div class="people__invite-holder">
+											<input type="email" class="input_text" placeholder="E-mail adresses, separated by commas" value="">
+											<a href="#" class="btn btn_grey js-invitations">Send invitations</a>
+											<a href="#" class="btn btn_clear">Cancel</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="people__col">
+								<ul class="people__list">
+									<li class="people__item">
+										<div class="people__userpic"><a href="#"><img src="img/userpic1.png"></a></div>
+										<div class="people__userinfo">
+											<p class="people__name"><a href="#">George Robinson</a></p>
+											<p><a href="#">george@mapidy.com</a></p>
+											<p>+7 (926) 417-17-76</p>
+										</div>
+									</li>
+									<li class="people__item">
+										<div class="people__userpic"><a href="#"><img src="img/userpic2.png"></a></div>
+										<div class="people__userinfo">
+											<p class="people__name"><a href="#">George Robinson</a></p>
+											<p><a href="#">george@mapidy.com</a></p>
+											<p>+7 (926) 417-17-76</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="people__row">
+							<div class="people__col people__left">
+								<h3 class="people__title">Workers</h3>
+								<div class="people__number">3 people</div>
+								<div class="people__button">
+									<a href="#" class="btn btn_grey js-invite">Invite more</a>
+									<div class="people__invite js-invite-drop">
+										<div class="people__invite-holder">
+											<input type="email" class="input_text" placeholder="E-mail adresses, separated by commas" value="">
+											<a href="#" class="btn btn_grey js-invitations">Send invitations</a>
+											<a href="#" class="btn btn_clear">Cancel</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="people__col">
+								<ul class="people__list">
+									<li class="people__item">
+										<div class="people__userpic"><a href="#"><img src="img/userpic1.png"></a></div>
+										<div class="people__userinfo">
+											<p class="people__name"><a href="#">George Robinson</a></p>
+											<p><a href="#">george@mapidy.com</a></p>
+											<p>+7 (926) 417-17-76</p>
+										</div>
+									</li>
+									<li class="people__item">
+										<div class="people__userpic"><a href="#"><img src="img/userpic2.png"></a></div>
+										<div class="people__userinfo">
+											<p class="people__name"><a href="#">George Robinson</a></p>
+											<p><a href="#">george@mapidy.com</a></p>
+											<p>+7 (926) 417-17-76</p>
+										</div>
+									</li>
+									<li class="people__item">
+										<div class="people__userpic"><a href="#"><img src="img/userpic3.png"></a></div>
+										<div class="people__userinfo">
+											<p class="people__name"><a href="#">George Robinson</a></p>
+											<p><a href="#">george@mapidy.com</a></p>
+											<p>+7 (926) 417-17-76</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<!-- /.page -->
+	<!-- BEGIN .footer -->
+	<div class="footer">
+		<div class="footer__holder">
+			<p>
+				<span class="footer__copyright">© 2012 MAPIDY LTD.</span>
+				<a href="mailto:info@mapidy.com">info@mapidy.com</a>
+			</p>
+		</div>
+	</div>
+	<!-- /.footer -->
+
+	<!-- BEGIN  popup-->
+	<div class="overlay "></div>
+	<div class="popup">
+		<div class="popup__close">
+			<a href="#"><i class="icon icon_close"></i>Close</a>
+		</div>
+		<div class="popup__header">
+			<h2 class="popup__title"># Sending invitations</h2>
+		</div>
+		<div class="popup__content">
+			Invitations to group “Coworkers” for adresses:
+			<span class="popup__emails">bill@microsoft.com, steve@apple.com</span>
+			was succesfully sent.
+		</div>
+		<div class="popup__bottom">
+			<a href="#" class="btn btn_grey">Continue</a>
+		</div>
+	</div>
+	<!-- END popup-->
+</body>
+</html>
