@@ -6,12 +6,14 @@
 		background-color: #fff;
 	}
 	.l-col1{
+		background-color: #fff;
+		@include box-shadow(2px 2px 2px 0px rgba(0,0,0,.2));
 		float:left;
-		width: 20%;
+		width: 74%;
 	}
 
 	.l-col2{
-		float:right;
-		width: 70%;
+		float: left;
+		width: 26%;
 	}
 }

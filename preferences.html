@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/jquery.tools.min.js"></script>
+	<script src="chosen/chosen.jquery.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -35,7 +36,7 @@
 			</div>
 			<div class="panel__tools">
 				<div class="panel__button js-drop">
-					<button class="btn btn_red"><i class="icon icon_create"></i>Create</button>
+					<button type="submit" class="btn btn_red"><i class="icon icon_create"></i>Create</button>
 					<div class="panel__button-dropdown js-dropdown">
 						<ul>
 							<li><a href="#">New task</a></li>
@@ -56,7 +57,7 @@
 			<div class="l l-main">
 				<div class="l-main__holder">
 					<div class="preferences">
-						<div class="preferences__content">
+						<div class="preferences__row">
 							<h1 class="title">Preferences</h1>
 							<div class="preferences__col preferences__left">
 								<h2 class="title2">Username and e-mail settings</h2>
@@ -89,7 +90,7 @@
 								</label>
 							</div>
 						</div>
-						<div class="preferences__content">
+						<div class="preferences__row">
 							<div class="title2">Notification settings</div>
 							<label class="label">
 								<div class="label__title">Notify me about</div>
@@ -108,9 +109,20 @@
 							<label class="label">
 								<div class="label__title">How often to notify</div>
 								<div class="label__field">
-									<input type="password" class="input_text" placeholder="" value="">
+									<select data-placeholder="Every time when happens something new" class="chzn-select">
+										<option value=""></option>
+										<option value="Every time when happens something">Every time when happens something</option>
+										<option value="Every time when happens">Every time when happens</option>
+										<option value="Every time when">Every time when</option>
+										<option value="Every time">Every time</option>
+										<option value="Every">Every</option>
+									</select>
 								</div>
 							</label>
+						</div>
+						<div class="preferences__buttons">
+							<button type="submit" class="btn btn_grey"><i class="icon icon_save"></i>Save settings</button>
+							<button type="submit" class="btn btn_grey" value="">Reset to previous</button>
 						</div>
 					</div>
 				</div>
