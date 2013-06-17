@@ -53,6 +53,53 @@
 	.icon_attach			{ @include s(ico_attach); }
 	.icon_user 				{ @include s(ico_user); }
 
+
+//select
+.select {
+	float: left;
+	position: relative;
+	display: block;
+	width: 100%;
+	select{
+		position: absolute;
+		opacity: 0;
+		height: 34px;
+		-webkit-appearance: none;
+		width: 100%;
+		z-index: 3;
+		top: 0;
+		left: 0;
+	}
+	i {
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		display: inline-block;
+		z-index: 2;
+		@include s(arrow3);
+		&:before{
+			position: absolute;
+			height: 33px;
+			width: 1px;
+			background-color: #dfdfdf;
+			top: -15px;
+			right: 24px;
+			content: "";
+		}
+	}
+	input{
+		width: 100%;
+		border: 1px solid #dfdfdf;
+		background: #f9f9f9;
+		line-height: 20px;
+		font-size: 14px;
+		color: #000;
+		padding: 6px 40px 6px 12px;
+		@include box-sizing(border-box);
+		@include border-radius(5px);
+	}
+}
+
 // buttons
 .btn{
 	display: inline-block;
@@ -144,11 +191,12 @@
 
 // Landing page
 .splash{
-	background: url(../img/bg.jpg) no-repeat 50% 0;
+	background: url(../img/bg.jpg) no-repeat -200px 0;
 	color: #fff;
 	@include r;
 	.out{
-		margin: 280px 0 20px 300px;
+		position: relative;
+		margin: 287px 0 20px 380px;
 	}
 	.topper{
 		margin-bottom: 135px;
@@ -230,6 +278,9 @@
 		@include b;
 	}
 	.feedback{
+		position: absolute;
+		bottom: -300px;
+		left: 0;
 		color: #919192;
 		text-transform: uppercase;
 		line-height: 1;
@@ -511,6 +562,9 @@
 	padding: 30px 15px;
 	border-bottom: 1px solid #cfdee5;
 	margin-bottom: 20px;
+	.select{
+		width: 425px;
+	}
 }
 .preferences__col{
 	width: 48%;
@@ -1020,6 +1074,7 @@
 .people-profile__group{
 	height: 32px;
 	line-height: 32px;
+	width: 310px;
 	.chzn-container {
 	  font-size: 14px;
 	  color: #000;
