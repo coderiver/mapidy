@@ -36,7 +36,7 @@
 			</div>
 			<div class="panel__tools">
 				<div class="panel__button js-drop">
-					<button class="btn btn_red"><i class="icon icon_create"></i>Create</button>
+					<button type="submit" class="btn btn_red"><i class="icon icon_create"></i>Create</button>
 					<div class="panel__button-dropdown js-dropdown">
 						<ul>
 							<li><a href="#">New task</a></li>
@@ -109,20 +109,25 @@
 							<label class="label">
 								<div class="label__title">How often to notify</div>
 								<div class="label__field">
-									<select data-placeholder="Every time when happens something new" class="chzn-select">
-										<option value=""></option>
-										<option value="Every time when happens something">Every time when happens something</option>
-										<option value="Every time when happens">Every time when happens</option>
-										<option value="Every time when">Every time when</option>
-										<option value="Every time">Every time</option>
-										<option value="Every">Every</option>
-									</select>
+									<div class="select">
+										<div class="select__icon"><i></i></div>
+										<select>
+											<option value="">Every time when happens something new</option>
+											<option value="">Every time when happens something new</option>
+											<option value="">Every time when happens something new</option>
+											<option value="">Every time when happens something new</option>
+											<option value="">Every time when happens something new</option>
+											<option value="">Every time when happens something new</option>
+											<option value="">Every time when happens something new</option>
+										</select>
+										<input type="text" class="select__value" placeholder="Every time when happens something new" value="Every time when happens something new">
+									</div>
 								</div>
 							</label>
 						</div>
 						<div class="preferences__buttons">
-							<a href="#" class="btn btn_grey"><i class="icon icon_save"></i>Save settings</a>
-							<a href="#" class="btn btn_grey">Reset to previous</a>
+							<button type="submit" class="btn btn_grey"><i class="icon icon_save"></i>Save settings</button>
+							<button type="submit" class="btn btn_grey" value="">Reset to previous</button>
 						</div>
 					</div>
 				</div>

@@ -1,0 +1,182 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="chosen/chosen.jquery.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+	<!-- BEGIN .header -->
+	<div class="header">
+		<div class="header__holder">
+			<h1 class="header__logo" title="Mapidy"><a href="#">Mapidy</a></h1>
+			<div class="header__profile">
+				<div class="header__user">Welcome, John Doe!</div>
+				<div class="header__preferences"><a href="#">Preferences</a></div>
+				<div class="header__quit"><a href="#">Quit</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- /.header -->
+	<!-- BEGIN .panel -->
+	<div class="panel">
+		<div class="panel__holder">
+			<div class="panel__nav">
+				<ul>
+					<li><a href="#"><i class="icon icon_tasks"></i>Tasks</a></li>
+					<li><a href="#"><i class="icon icon_profile"></i>Profile</a></li>
+					<li class="is-active"><a href="#"><i class="icon icon_people"></i>People</a></li>
+					<li><a href="#"><i class="icon icon_notifications"></i>Notifications</a></li>
+				</ul>
+			</div>
+			<div class="panel__tools">
+				<div class="panel__button js-drop">
+					<button type="submit" class="btn btn_red"><i class="icon icon_create"></i>Create</button>
+					<div class="panel__button-dropdown js-dropdown">
+						<ul>
+							<li><a href="#">New task</a></li>
+							<li><a href="#">New canban board</a></li>
+							<li><a href="#">New people group</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="panel__search">
+					<i class="icon icon_search"></i><input type="text" placeholder="Search" class="panel__input">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.panel -->
+	<!-- BEGIN .page -->
+	<div class="page">
+		<div class="page__holder">
+			<div class="l">
+				<div class="l-col1">
+					<div class="people-profile">
+						<div class="people-profile__topper">
+								<button class="people-profile__button"><i class="icon icon_close2"></i>Back to list</button>
+								<div class="people-profile__userpic">
+									<img src="img/userpic1.png" alt="">
+								</div>
+								<div class="people-profile__user-info">
+									<div class="people-profile__name">George Robinson</div>
+									<div class="people-profile__last-login"><span>Last login:</span> 18 april 2012</div>
+									<div class="people-profile__group">
+										<div class="select">
+											<div class="select__icon"><i></i></div>
+											<select>
+												<option value="">My Friends</option>
+												<option value="">Teammates</option>
+												<option value="">Coworkers</option>
+												<option value="">Workers</option>
+											</select>
+											<input type="text" class="select__value" placeholder="" value="My Friends">
+										</div>
+									</div>
+								</div>
+						</div>
+						<div class="people-profile__bottom">
+							<div class="people-profile__tasks">
+								<h1 class="title">Active task</h1>
+								<ul class="people-profile__tasks-list">
+									<li>
+										<a href="#" class="people-profile__tasks-title">Come alone with me lalalalalalalala</a>
+										<ul class="people-profile__tasks-meta">
+											<li><a href="#"><i class="icon icon_comment"></i>5</a></li>
+											<li><a href="#"><i class="icon icon_attach"></i>1</a></li>
+											<li><a href="#"><i class="icon icon_user"></i>3</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#" class="people-profile__tasks-title">Features and Analysis</a>
+										<ul class="people-profile__tasks-meta">
+											<li><a href="#"><i class="icon icon_comment"></i>5</a></li>
+											<li><a href="#"><i class="icon icon_attach"></i>1</a></li>
+											<li><a href="#"><i class="icon icon_user"></i>3</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#" class="people-profile__tasks-title">Features and Analysis</a>
+										<ul class="people-profile__tasks-meta">
+											<li><a href="#"><i class="icon icon_comment"></i>5</a></li>
+											<li><a href="#"><i class="icon icon_attach"></i>1</a></li>
+											<li><a href="#"><i class="icon icon_user"></i>3</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#" class="people-profile__tasks-title">Features and Analysis</a>
+										<ul class="people-profile__tasks-meta">
+											<li><a href="#"><i class="icon icon_comment"></i>5</a></li>
+											<li><a href="#"><i class="icon icon_attach"></i>1</a></li>
+											<li><a href="#"><i class="icon icon_user"></i>3</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#" class="people-profile__tasks-title">Features and Analysis</a>
+										<ul class="people-profile__tasks-meta">
+											<li><a href="#"><i class="icon icon_comment"></i>5</a></li>
+											<li><a href="#"><i class="icon icon_attach"></i>1</a></li>
+											<li><a href="#"><i class="icon icon_user"></i>3</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="people-profile__note">
+								<div class="people-profile__title">
+									Private comment
+									<span>This comment will only see you</span>
+								</div>
+								<div class="people-profile__textarea">
+									<textarea></textarea>
+								</div>
+								<input type="submit" class="btn btn_grey" value="Submit">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="l-col2">
+					<div class="l-col2__holder">
+						<div class="people-sidebar">
+							<h1 class="title">Contacts</h1>
+							<div class="people-sidebar__info">
+								<dl>
+									<dt>E-mail:</dt>
+									<dd><a href="#">george@mapidy.com</a></dd>
+								</dl>
+								<dl>
+									<dt>Telephone:</dt>
+									<dd>+1 (4256) 246-748</dd>
+								</dl>
+								<dl>
+									<dt>Skype:</dt>
+									<dd>supergeorge</dd>
+								</dl>
+								<dl>
+									<dt>ICQ:</dt>
+									<dd>1342635748</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.page -->
+	<!-- BEGIN .footer -->
+	<div class="footer">
+		<div class="footer__holder">
+			<p>
+				<span class="footer__copyright">© 2012 MAPIDY LTD.</span>
+				<a href="mailto:info@mapidy.com">info@mapidy.com</a>
+			</p>
+		</div>
+	</div>
+	<!-- /.footer -->
+</body>
+</html>
